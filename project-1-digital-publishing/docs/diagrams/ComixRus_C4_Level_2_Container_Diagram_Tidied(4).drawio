@@ -1,0 +1,323 @@
+<mxfile host="app.diagrams.net" agent="ChatGPT">
+  <diagram id="comixrus-c4-l2-clean" name="ComixRus C4 Level 2">
+    <mxGraphModel dx="2672" dy="1110" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1900" pageHeight="1250" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=22;fontStyle=1;fontColor=#18324B;" value="&lt;b&gt;ComixRus&lt;/b&gt; — C4 Level 2: Container Diagram" vertex="1">
+          <mxGeometry height="34" width="1100" x="35" y="18" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=12;fontColor=#526575;" value="Proposed AWS implementation • Containers represent independently deployable applications, services, data stores or infrastructure." vertex="1">
+          <mxGeometry height="25" width="1400" x="36" y="53" as="geometry" />
+        </mxCell>
+        <mxCell id="customer" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=12;" value="Customer&lt;br&gt;&lt;font style=&#39;font-size:10px&#39;&gt;Browses, reads, buys and downloads comics&lt;/font&gt;" vertex="1">
+          <mxGeometry height="105" width="125" x="35" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="writer" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=12;" value="Independent Comic Writer&lt;br&gt;&lt;font style=&#39;font-size:10px&#39;&gt;Uploads and submits original comics&lt;/font&gt;" vertex="1">
+          <mxGeometry height="110" width="145" x="35" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="reviewer" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=12;" value="ComixRus Reviewer&lt;br&gt;&lt;font style=&#39;font-size:10px&#39;&gt;Reviews and approves submissions&lt;/font&gt;" vertex="1">
+          <mxGeometry height="105" width="135" x="35" y="675" as="geometry" />
+        </mxCell>
+        <mxCell id="stripe" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;strokeWidth=1.5;dashed=1;fontSize=12;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Stripe&lt;/b&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px&#39;&gt;External payment provider&lt;/font&gt;" vertex="1">
+          <mxGeometry height="75" width="170" x="1880" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="paypal" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;strokeWidth=1.5;dashed=1;fontSize=12;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;PayPal&lt;/b&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px&#39;&gt;External payment provider&lt;/font&gt;" vertex="1">
+          <mxGeometry height="75" width="170" x="1880" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="email" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;strokeWidth=1.5;dashed=1;fontSize=12;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Email delivery provider&lt;/b&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px&#39;&gt;Amazon SES or equivalent&lt;/font&gt;" vertex="1">
+          <mxGeometry height="85" width="170" x="1880" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="boundary" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#5B7FA3;strokeWidth=2;dashed=1;verticalAlign=top;align=left;spacingLeft=14;spacingTop=8;fontStyle=1;fontSize=17;fontColor=#24415C;" value="&lt;b&gt;COMIXRUS SOFTWARE SYSTEM&lt;/b&gt;" vertex="1">
+          <mxGeometry height="860" width="1240" x="510" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="customerweb" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;strokeWidth=1.5;fontSize=12;align=center;verticalAlign=middle;spacing=7;" value="&lt;b&gt;Customer Web Application&lt;/b&gt;&lt;br&gt;&lt;i&gt;Web application&lt;/i&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px&#39;&gt;Browse and search catalogue; read public samples; authenticate; manage basket; purchase and download comics.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="120" width="270" x="270" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="writerportal" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;strokeWidth=1.5;fontSize=12;align=center;verticalAlign=middle;spacing=7;" value="&lt;b&gt;Writer Portal&lt;/b&gt;&lt;br&gt;&lt;i&gt;Web application&lt;/i&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px&#39;&gt;Writer registration; secure comic upload; submission tracking and status.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="110" width="270" x="270" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="adminportal" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;strokeWidth=1.5;fontSize=12;align=center;verticalAlign=middle;spacing=7;" value="&lt;b&gt;Admin &amp;amp; Review Portal&lt;/b&gt;&lt;br&gt;&lt;i&gt;Web application&lt;/i&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px&#39;&gt;Staff review queue; approve/reject submissions; manage published content.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="110" width="270" x="270" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="api" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#CFE2F3;strokeColor=#3D85C6;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;spacing=7;" value="&lt;b&gt;API Gateway&lt;/b&gt;&lt;br&gt;&lt;i&gt;Amazon API Gateway&lt;/i&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px&#39;&gt;Single API entry point; routes requests to backend services and applies request controls.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="110" width="245" x="705" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="auth" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;strokeWidth=1.5;fontSize=11;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Identity &amp;amp; Authentication&lt;/b&gt;&lt;br&gt;&lt;i&gt;Amazon Cognito&lt;/i&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px&#39;&gt;Customer, writer and staff identities; sign-in; token issuance and access groups.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="105" width="245" x="730" y="174" as="geometry" />
+        </mxCell>
+        <mxCell id="catalogue" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;strokeWidth=1.5;fontSize=11;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Catalogue &amp;amp; Content Service&lt;/b&gt;&lt;br&gt;&lt;i&gt;AWS Lambda&lt;/i&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px&#39;&gt;Searches catalogue; reads metadata; checks sample/full-content access.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="105" width="250" x="1190" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="submission" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;strokeWidth=1.5;fontSize=11;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Submission &amp;amp; Review Service&lt;/b&gt;&lt;br&gt;&lt;i&gt;AWS Lambda&lt;/i&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px&#39;&gt;Creates submissions; stores uploads; tracks review and publication state.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="110" width="250" x="1190" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="orders" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;strokeWidth=1.5;fontSize=11;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Order Processing Service&lt;/b&gt;&lt;br&gt;&lt;i&gt;AWS Lambda&lt;/i&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px&#39;&gt;Manages checkout, order status and permanent customer entitlements.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="105" width="250" x="1190" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="payment" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;strokeWidth=1.5;fontSize=11;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Payment Integration Service&lt;/b&gt;&lt;br&gt;&lt;i&gt;AWS Lambda&lt;/i&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px&#39;&gt;Creates provider payment sessions; verifies Stripe / PayPal webhooks.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="105" width="230" x="1580" y="475" as="geometry" />
+        </mxCell>
+        <mxCell id="invoice" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;strokeWidth=1.5;fontSize=11;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Invoicing Service&lt;/b&gt;&lt;br&gt;&lt;i&gt;AWS Lambda&lt;/i&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px&#39;&gt;Creates invoice and receipt records after confirmed purchase.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="95" width="250" x="1190" y="655" as="geometry" />
+        </mxCell>
+        <mxCell id="notify" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;strokeWidth=1.5;fontSize=11;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Notification Service&lt;/b&gt;&lt;br&gt;&lt;i&gt;AWS Lambda&lt;/i&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px&#39;&gt;Consumes events and sends purchase, receipt and submission emails.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="95" width="230" x="1580" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="db" parent="1" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#F8CECC;strokeColor=#B85450;strokeWidth=1.5;fontSize=11;align=center;verticalAlign=middle;spacing=5;" value="&lt;b&gt;ComixRus Database&lt;/b&gt;&lt;br&gt;&lt;i&gt;Amazon RDS / PostgreSQL&lt;/i&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px&#39;&gt;Customer and writer profiles; comic metadata; submission status; orders; invoice records; purchase entitlements.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="125" width="300" x="730" y="789" as="geometry" />
+        </mxCell>
+        <mxCell id="s3" parent="1" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#F8CECC;strokeColor=#B85450;strokeWidth=1.5;fontSize=11;align=center;verticalAlign=middle;spacing=5;" value="&lt;b&gt;Comic File Storage&lt;/b&gt;&lt;br&gt;&lt;i&gt;Amazon S3&lt;/i&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px&#39;&gt;Original uploads, approved comic files and downloadable digital copies. Private by default.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="110" width="270" x="270" y="815" as="geometry" />
+        </mxCell>
+        <mxCell id="sqs" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;strokeWidth=1.5;fontSize=11;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Event / Notification Queue&lt;/b&gt;&lt;br&gt;&lt;i&gt;Amazon SQS&lt;/i&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px&#39;&gt;Buffers asynchronous purchase, invoice and submission events for background processing.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="95" width="250" x="1190" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="a_customer" edge="1" parent="1" source="customer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.4;fontSize=10;fontColor=#263238;labelBackgroundColor=#FFFFFF;spacing=3;exitPerimeter=1;entryPerimeter=1;" target="customerweb" value="Uses website">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="195" y="242" />
+              <mxPoint x="195" y="225" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a_writer" edge="1" parent="1" source="writer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.4;fontSize=10;fontColor=#263238;labelBackgroundColor=#FFFFFF;spacing=3;exitPerimeter=1;entryPerimeter=1;" target="writerportal" value="Uploads submissions">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="205" y="485" />
+              <mxPoint x="205" y="445" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a_reviewer" edge="1" parent="1" source="reviewer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.4;fontSize=10;fontColor=#263238;labelBackgroundColor=#FFFFFF;spacing=3;exitPerimeter=1;entryPerimeter=1;" target="adminportal" value="Reviews content">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="205" y="725" />
+              <mxPoint x="205" y="705" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_cw_api" edge="1" parent="1" source="customerweb" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.4;fontSize=10;fontColor=#263238;labelBackgroundColor=#FFFFFF;spacing=3;exitPerimeter=1;entryPerimeter=1;" target="api" value="HTTPS / JSON API">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="585" y="225" />
+              <mxPoint x="585" y="445" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_wp_api" edge="1" parent="1" source="writerportal" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.4;fontSize=10;fontColor=#263238;labelBackgroundColor=#FFFFFF;spacing=3;exitPerimeter=1;entryPerimeter=1;" target="api" value="&lt;div&gt;HTTPS /&amp;nbsp;&lt;/div&gt;&lt;div&gt;JSON API&lt;/div&gt;">
+          <mxGeometry relative="1" x="0.4545" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="585" y="445" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_ap_api" edge="1" parent="1" source="adminportal" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.4;fontSize=10;fontColor=#263238;labelBackgroundColor=#FFFFFF;spacing=3;exitPerimeter=1;entryPerimeter=1;" target="api" value="HTTPS / JSON API">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="585" y="705" />
+              <mxPoint x="585" y="445" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_api_auth" edge="1" parent="1" source="api" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.4;fontSize=10;fontColor=#263238;labelBackgroundColor=#FFFFFF;spacing=3;exitPerimeter=1;entryPerimeter=1;" target="auth" value="Validates access tokens">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="850" y="329" />
+              <mxPoint x="850" y="299" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_api_cat" edge="1" parent="1" source="api" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.4;fontSize=10;fontColor=#263238;labelBackgroundColor=#FFFFFF;spacing=3;exitPerimeter=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="catalogue" value="Catalogue / reading requests">
+          <mxGeometry relative="1" x="-0.1681" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="930" y="300" />
+              <mxPoint x="1040" y="300" />
+              <mxPoint x="1040" y="202.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_api_sub" edge="1" parent="1" source="api" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.4;fontSize=10;fontColor=#263238;labelBackgroundColor=#FFFFFF;spacing=3;exitPerimeter=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="submission" value="Upload / review requests">
+          <mxGeometry relative="1" x="-0.104" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="930" y="337.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_api_order" edge="1" parent="1" source="api" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.4;fontSize=10;fontColor=#263238;labelBackgroundColor=#FFFFFF;spacing=3;exitPerimeter=1;entryPerimeter=1;" target="orders" value="Checkout / order requests">
+          <mxGeometry relative="1" x="0.1613" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="930" y="550" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_sub_s3" edge="1" parent="1" source="submission" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.4;fontSize=10;fontColor=#263238;labelBackgroundColor=#FFFFFF;spacing=3;exitPerimeter=1;entryPerimeter=1;" target="s3" value="Stores uploaded comic files">
+          <mxGeometry relative="1" x="-0.0043" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1125" y="365" />
+              <mxPoint x="1125" y="590" />
+              <mxPoint x="600" y="590" />
+              <mxPoint x="600" y="870" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_sub_db" edge="1" parent="1" source="submission" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.4;fontSize=10;fontColor=#263238;labelBackgroundColor=#FFFFFF;spacing=3;entryPerimeter=1;" value="Saves submission metadata">
+          <mxGeometry relative="1" x="0.0363" y="20" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1000" y="400" />
+            </Array>
+            <mxPoint x="1220" y="370" as="sourcePoint" />
+            <mxPoint x="1000" y="789" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_cat_db" edge="1" parent="1" source="catalogue" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.4;fontSize=10;fontColor=#263238;labelBackgroundColor=#FFFFFF;spacing=3;exitPerimeter=0;entryPerimeter=1;exitX=0.532;exitY=1.01;exitDx=0;exitDy=0;" target="db" value="&lt;div&gt;Reads comic metadata&amp;nbsp;&lt;/div&gt;&lt;div&gt;/entitlements&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.264" y="-100" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1323" y="280" />
+              <mxPoint x="1160" y="280" />
+              <mxPoint x="1160" y="851.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_cat_s3" edge="1" parent="1" source="catalogue" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.4;fontSize=10;fontColor=#263238;labelBackgroundColor=#FFFFFF;spacing=3;exitPerimeter=1;entryPerimeter=1;" target="s3" value="&lt;div&gt;Retrieves approved&amp;nbsp;&lt;/div&gt;&lt;div&gt;comic files&lt;/div&gt;">
+          <mxGeometry relative="1" x="0.0139" y="20" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="620" y="160" />
+              <mxPoint x="620" y="780" />
+              <mxPoint x="405" y="780" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_orders_db" edge="1" parent="1" source="orders" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.4;fontSize=10;fontColor=#263238;labelBackgroundColor=#FFFFFF;spacing=3;exitPerimeter=1;" value="&lt;div&gt;Records orders&amp;nbsp;&lt;/div&gt;&lt;div&gt;and entitlements&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.037" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1315" y="610" />
+              <mxPoint x="970" y="610" />
+            </Array>
+            <mxPoint x="970" y="780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_orders_payment" edge="1" parent="1" source="orders" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.4;fontSize=10;fontColor=#263238;labelBackgroundColor=#FFFFFF;spacing=3;exitPerimeter=1;entryPerimeter=1;" target="payment" value="Initiates payment">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1285" y="537" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_payment_stripe" edge="1" parent="1" source="payment" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.4;fontSize=10;fontColor=#263238;labelBackgroundColor=#FFFFFF;spacing=3;exitPerimeter=1;entryPerimeter=1;" target="stripe" value="Creates Stripe payment">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1845" y="505" />
+              <mxPoint x="1845" y="457" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_payment_paypal" edge="1" parent="1" source="payment" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.4;fontSize=10;fontColor=#263238;labelBackgroundColor=#FFFFFF;spacing=3;exitPerimeter=1;entryPerimeter=1;" target="paypal" value="Creates PayPal payment">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1855" y="545" />
+              <mxPoint x="1855" y="578" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_stripe_payment" edge="1" parent="1" source="stripe" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.4;fontSize=10;fontColor=#263238;labelBackgroundColor=#FFFFFF;spacing=3;exitPerimeter=1;entryPerimeter=1;" target="payment" value="Verified webhook result">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1865" y="395" />
+              <mxPoint x="1700" y="395" />
+              <mxPoint x="1700" y="455" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_paypal_payment" edge="1" parent="1" source="paypal" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.4;fontSize=10;fontColor=#263238;labelBackgroundColor=#FFFFFF;spacing=3;exitPerimeter=1;entryPerimeter=1;" target="payment" value="Verified webhook result">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1865" y="640" />
+              <mxPoint x="1700" y="640" />
+              <mxPoint x="1700" y="590" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_orders_invoice" edge="1" parent="1" source="orders" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.4;fontSize=10;fontColor=#263238;labelBackgroundColor=#FFFFFF;spacing=3;exitPerimeter=1;entryPerimeter=1;" target="invoice" value="Requests invoice">
+          <mxGeometry relative="1" x="0.2857" y="5" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1315" y="605" />
+              <mxPoint x="1315" y="635" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_invoice_db" edge="1" parent="1" source="invoice" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.4;fontSize=10;fontColor=#263238;labelBackgroundColor=#FFFFFF;spacing=3;exitPerimeter=1;entryPerimeter=1;" target="db" value="Stores invoice record">
+          <mxGeometry relative="1" x="-0.2642" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="970" y="710" />
+              <mxPoint x="970" y="850" />
+              <mxPoint x="800" y="850" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_orders_sqs" edge="1" parent="1" source="orders" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.4;fontSize=10;fontColor=#263238;labelBackgroundColor=#FFFFFF;spacing=3;exitPerimeter=1;entryPerimeter=1;" target="sqs" value="Publishes purchase event">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1460" y="585" />
+              <mxPoint x="1460" y="855" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_invoice_sqs" edge="1" parent="1" source="invoice" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.4;fontSize=10;fontColor=#263238;labelBackgroundColor=#FFFFFF;spacing=3;exitPerimeter=1;entryPerimeter=1;" target="sqs" value="Publishes invoice event">
+          <mxGeometry relative="1" x="-0.3333" y="5" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1315" y="770" />
+              <mxPoint x="1315" y="795" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_submission_sqs" edge="1" parent="1" source="submission" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.4;fontSize=10;fontColor=#263238;labelBackgroundColor=#FFFFFF;spacing=3;exitPerimeter=1;entryPerimeter=1;" target="sqs" value="Publishes review outcome">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1460" y="365" />
+              <mxPoint x="1460" y="790" />
+              <mxPoint x="1315" y="790" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_sqs_notify" edge="1" parent="1" source="sqs" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.4;fontSize=10;fontColor=#263238;labelBackgroundColor=#FFFFFF;spacing=3;exitPerimeter=1;entryPerimeter=1;" target="notify" value="Delivers queued events">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1285" y="860" />
+              <mxPoint x="1300" y="860" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_notify_email" edge="1" parent="1" source="notify" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.4;fontSize=10;fontColor=#263238;labelBackgroundColor=#FFFFFF;spacing=3;exitPerimeter=1;entryPerimeter=1;" target="email" value="Sends transactional email">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1845" y="827" />
+              <mxPoint x="1860" y="827" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="delivery_note" parent="1" style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=11;align=left;verticalAlign=middle;spacing=8;" value="&lt;b&gt;Content delivery:&lt;/b&gt; CloudFront can sit in front of private S3 content. The content service verifies the customer&#39;s entitlement, then issues a short-lived signed URL or cookie. Public samples can use a separate public path." vertex="1">
+          <mxGeometry height="95" width="900" x="35" y="1010" as="geometry" />
+        </mxCell>
+        <mxCell id="security_note" parent="1" style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=11;align=left;verticalAlign=middle;spacing=8;" value="&lt;b&gt;Security / payment rules&lt;/b&gt;&lt;br&gt;• S3 bucket is private; do not expose permanent public object URLs.&lt;br&gt;• Authenticate full-reading customers and check ownership before delivery.&lt;br&gt;• Verify provider webhooks and make payment handling idempotent before granting entitlements." vertex="1">
+          <mxGeometry height="95" width="830" x="970" y="1010" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=12;fontColor=#526575;" value="&lt;b&gt;Legend&lt;/b&gt; &amp;nbsp; &lt;font color=&#39;#3D85C6&#39;&gt;Blue:&lt;/font&gt; user-facing / API &amp;nbsp; &lt;font color=&#39;#548235&#39;&gt;Green:&lt;/font&gt; application services &amp;nbsp; &lt;font color=&#39;#9673A6&#39;&gt;Purple:&lt;/font&gt; asynchronous messaging &amp;nbsp; &lt;font color=&#39;#B85450&#39;&gt;Red:&lt;/font&gt; data stores &amp;nbsp; &lt;font color=&#39;#666666&#39;&gt;Dashed grey:&lt;/font&gt; external systems" vertex="1">
+          <mxGeometry height="35" width="1760" x="35" y="1120" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
